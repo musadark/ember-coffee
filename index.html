@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17130f">
+  <meta name="description" content="EMBER — место для неспешного кофе. Классические напитки, авторские сочетания и атмосфера тепла.">
+  <title>EMBER — кофе и тишина</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="EMBER — на главную">EMB<span>E</span>R<i>COFFEE HOUSE</i></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню"><span></span><span></span></button>
+    <nav id="navigation" aria-label="Основная навигация"><a href="#menu">Меню</a><a href="#about">О нас</a><a href="#contacts">Контакты</a></nav>
+    <a class="header-cta" href="#contacts">Заглянуть к нам <span>↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> МАЛЕНЬКИЕ РИТУАЛЫ. БОЛЬШОЕ УДОВОЛЬСТВИЕ.</p>
+        <h1>Хороший кофе.<br>Ваше <em>время.</em></h1>
+        <p class="intro">Оставьте спешку за дверью. Здесь пахнет свежемолотым кофе, звучит любимая музыка и всегда найдётся время для себя.</p>
+        <div class="hero-actions"><a class="button" href="#menu">Выбрать свой кофе <span>↗</span></a><a class="text-link" href="#about">История EMBER <span>→</span></a></div>
+        <div class="hero-note"><span class="bean">◒</span><p>Всё начинается с зерна.<br><strong>И продолжается хорошим днём.</strong></p></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Чашка кофе с молочным рисунком на тёмном блюдце в тёплом свете">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="art-label">THE ART OF SLOW COFFEE</span>
+        <div class="saucer"><div class="cup-handle"></div><div class="cup"><div class="coffee"><svg viewBox="0 0 240 240" aria-hidden="true"><defs><radialGradient id="crema"><stop stop-color="#c68e50"/><stop offset="1" stop-color="#85451e"/></radialGradient></defs><circle cx="120" cy="120" r="116" fill="url(#crema)"/><g fill="#f3dfb6" transform="rotate(-25 120 120)"><path d="M120 185C105 164 52 140 60 111C68 86 110 111 120 135C130 111 172 86 180 111C188 140 135 164 120 185Z"/><path d="M120 151C101 130 65 113 74 91C82 73 110 91 120 111C130 91 158 73 166 91C175 113 139 130 120 151Z" stroke="#ae7138" stroke-width="5"/><path d="M120 120C101 103 85 90 93 76C101 63 116 76 120 85C124 76 139 63 147 76C155 90 139 103 120 120Z" stroke="#ae7138" stroke-width="5"/><path d="M118 70Q121 126 124 185" fill="none" stroke="#fff0ce" stroke-width="5" stroke-linecap="round"/></g></svg></div></div></div>
+        <div class="coffee-caption"><span>ВАШ МАЛЕНЬКИЙ РИТУАЛ</span><p>Согревает больше,<br>чем просто руки.</p></div><span class="art-number">01 / EVERYDAY MOMENTS</span>
+      </div>
+      <a class="scroll-link" href="#menu">ЛИСТАЙТЕ НЕ СПЕША <span>↓</span></a>
+    </section>
+    <div class="values-strip" aria-label="Наш подход"><span>Свежий помол</span><b>✦</b><span>Внимание к деталям</span><b>✦</b><span>Любовь в каждой чашке</span><b>✦</b><span>Время для себя</span></div>
+    <section class="menu-section section" id="menu">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / НАШЕ МЕНЮ</p><h2>Найдите свой <em>вкус.</em></h2></div><p>Знакомая классика или новое открытие.<br>Выбирайте под настроение.</p></div>
+      <div class="filters" role="group" aria-label="Категории напитков"><button class="active" data-filter="all" aria-pressed="true">Все напитки <small>06</small></button><button data-filter="classic" aria-pressed="false">Классика</button><button data-filter="signature" aria-pressed="false">Авторские</button></div>
+      <div class="drinks">
+        <article class="drink reveal" data-category="classic"><div class="drink-art espresso"><span class="drink-tag">ЧИСТЫЙ ВКУС</span><div class="mini-cup"></div><span class="volume">40 мл</span></div><div class="drink-title"><h3>Эспрессо</h3><span>180 ₽</span></div><p>Плотный, насыщенный, с нотами тёмного шоколада и долгим послевкусием.</p></article>
+        <article class="drink reveal" data-category="classic"><div class="drink-art americano"><div class="mini-cup"></div><span class="volume">200 мл</span></div><div class="drink-title"><h3>Американо</h3><span>220 ₽</span></div><p>Чистый характер кофе. Мягкая крепость и ничего лишнего.</p></article>
+        <article class="drink reveal" data-category="classic"><div class="drink-art cappuccino"><span class="drink-tag">ЛЮБИМЫЙ РИТУАЛ</span><div class="mini-cup"></div><span class="volume">250 мл</span></div><div class="drink-title"><h3>Капучино</h3><span>290 ₽</span></div><p>Идеальный баланс эспрессо, тёплого молока и бархатистой пены.</p></article>
+        <article class="drink reveal" data-category="classic"><div class="drink-art latte"><div class="mini-cup"></div><span class="volume">300 мл</span></div><div class="drink-title"><h3>Латте</h3><span>320 ₽</span></div><p>Нежный и молочный. Для тех моментов, которые хочется продлить.</p></article>
+        <article class="drink reveal" data-category="signature"><div class="drink-art raf"><span class="drink-tag">ВЫБОР EMBER</span><div class="mini-cup"></div><span class="volume">300 мл</span></div><div class="drink-title"><h3>Ванильный раф</h3><span>370 ₽</span></div><p>Эспрессо, сливки и ваниль, взбитые в одну воздушную историю.</p></article>
+        <article class="drink reveal" data-category="signature"><div class="drink-art mocha"><div class="mini-cup"></div><span class="volume">300 мл</span></div><div class="drink-title"><h3>Пряный мокко</h3><span>390 ₽</span></div><p>Шоколад, выразительный кофе и щепотка корицы для особого тепла.</p></article>
+      </div><p class="menu-note">Маленькая просьба: расскажите бариста об аллергиях перед заказом.</p><p class="sr-only" id="filter-status" aria-live="polite"></p>
+    </section>
+    <section class="about section" id="about"><div class="about-art reveal"><span class="eyebrow">THE EMBER PHILOSOPHY</span><div class="poster-word">just<br><em>slow</em><br>down.</div><span class="poster-bottom">КОФЕ. ТЕПЛО. МОМЕНТ.</span></div><div class="about-copy reveal"><p class="eyebrow">02 / О НАС</p><h2>Место, где можно<br>просто <em>быть.</em></h2><p>EMBER — это тлеющий уголёк. Тихое тепло, которое остаётся с вами. Именно таким мы задумали наше пространство: спокойным, простым и наполненным маленькими радостями.</p><p>Мы верим, что хорошему кофе не нужны громкие слова. Ему нужны внимательные руки, правильное зерно и человек, который никуда не торопится.</p><div class="about-signature"><span>С теплом,</span><strong>команда EMBER</strong><b>✳</b></div></div></section>
+    <section class="contacts section" id="contacts"><div class="reveal"><p class="eyebrow">03 / ДО ВСТРЕЧИ</p><h2>Ваша следующая<br>пауза — <em>здесь.</em></h2><p class="contact-intro">Приходите за кофе.<br>Оставайтесь ради атмосферы.</p><a class="button" href="https://www.openstreetmap.org/search?query=Москва%20Покровка%2012" target="_blank" rel="noopener noreferrer">Посмотреть адрес на карте <span>↗</span></a></div><div class="contact-details reveal"><div><span>АДРЕС</span><p>Москва, ул. Покровка, 12</p></div><div><span>ЖДЁМ ВАС</span><p>Пн — Пт <b>08:00 — 21:00</b><br>Сб — Вс <b>09:00 — 22:00</b></p></div><div><span>НАПИШИТЕ НАМ</span><p><a href="mailto:hello@ember.example">hello@ember.example ↗</a></p></div><p class="demo-note">Демонстрационный проект: адрес, часы работы, цены и почта приведены для примера.</p></div></section>
+  </main>
+  <footer class="footer"><a class="logo" href="#home">EMBER<i>COFFEE HOUSE</i></a><p>© <span id="year">2026</span> EMBER. Создано с теплом.</p><a class="back-top" href="#home">Наверх ↑</a></footer>
+</body>
+</html>
